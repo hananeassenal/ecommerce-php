@@ -160,7 +160,8 @@ paypal.Button.render({
     env: 'sandbox', // change for production if app is live,
 
 	client: {
-        sandbox:    'AEfYxns5l1tnCle5stC4-vpS0mg4ABwESySCOSq9CsW7wff3Ehr5LeGA',
+        sandbox:'EPCeGDcTz5n6Te8ICgx-9BkuklABoyXJPyHs5i5mbiZfHO5t3_3OTM6T9al656AaJmVkhNCo9sgHdZ3B',
+	
         //production: 'AaBHKJFEej4V6yaArjzSx9cuf-UYesQYKqynQVCdBlKuZKawDDzFyuQdidPOBSGEhWaNQnnvfzuFB9SM'
     },
 

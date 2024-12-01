@@ -84,8 +84,8 @@ if (isset($_POST['signup'])) {
             $mail->isSMTP();    
             $mail->Host = 'smtp.gmail.com';                    
             $mail->SMTPAuth = true;    
-            $mail->Username = 'btissam1234btissam12@gmail.com';     
-            $mail->Password = 'tldg lalv qaqo elda';     
+            $mail->Username = 'btissamchaibi1912@gmail.com';     
+            $mail->Password = 'flci zfch wswm uiat';     
             $mail->SMTPOptions = array(
                 'ssl' => array(
                     'verify_peer' => false,
@@ -96,9 +96,9 @@ if (isset($_POST['signup'])) {
             $mail->SMTPSecure = 'ssl';   
             $mail->Port = 465; 
 
-            $mail->setFrom('testsourcecodester@gmail.com');
+            $mail->setFrom('btissamchaibi1912@gmail.com');
             $mail->addAddress($email);              
-            $mail->addReplyTo('testsourcecodester@gmail.com');
+            $mail->addReplyTo('btissamchaibi1912@gmail.com');
             
             // Content
             $mail->isHTML(true);                                    
