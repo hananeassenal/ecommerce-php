@@ -2,6 +2,7 @@
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 include 'includes/session.php';
+
 if (isset($_POST['signup'])) {
     // Capture user input and sanitize
     $firstname = htmlspecialchars($_POST['firstname']);
@@ -84,8 +85,8 @@ if (isset($_POST['signup'])) {
             $mail->isSMTP();    
             $mail->Host = 'smtp.gmail.com';                    
             $mail->SMTPAuth = true;    
-            $mail->Username = 'btissamchaibi1912@gmail.com';     
-            $mail->Password = 'flci zfch wswm uiat';     
+            $mail->Username = 'hananeassendal.info@gmail.com';     
+            $mail->Password = 'xrjc lyor exlw ltep';     // Updated with your app password
             $mail->SMTPOptions = array(
                 'ssl' => array(
                     'verify_peer' => false,
@@ -96,9 +97,9 @@ if (isset($_POST['signup'])) {
             $mail->SMTPSecure = 'ssl';   
             $mail->Port = 465; 
 
-            $mail->setFrom('btissamchaibi1912@gmail.com');
+            $mail->setFrom('hananeassendal.info@gmail.com', 'Your Website Name');
             $mail->addAddress($email);              
-            $mail->addReplyTo('btissamchaibi1912@gmail.com');
+            $mail->addReplyTo('hananeassendal.info@gmail.com');
             
             // Content
             $mail->isHTML(true);                                    

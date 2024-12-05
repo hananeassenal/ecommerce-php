@@ -1,18 +1,21 @@
 <?php
-	include '../includes/conn.php';
-	session_start();
+include '../includes/conn.php';
 
-	if(!isset($_SESSION['admin']) || trim($_SESSION['admin']) == ''){
-		header('location: ../index.php');
-		exit();
-	}
+// Éviter le double démarrage de session
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
 
-	$conn = $pdo->open();
+if(!isset($_SESSION['admin']) || trim($_SESSION['admin']) == ''){
+    header('location: ../index.php');
+    exit();
+}
 
-	$stmt = $conn->prepare("SELECT * FROM users WHERE id=:id");
-	$stmt->execute(['id'=>$_SESSION['admin']]);
-	$admin = $stmt->fetch();
+$conn = $pdo->open();
 
-	$pdo->close();
+$stmt = $conn->prepare("SELECT * FROM users WHERE id=:id");
+$stmt->execute(['id'=>$_SESSION['admin']]);
+$admin = $stmt->fetch();
 
+$pdo->close();
 ?>

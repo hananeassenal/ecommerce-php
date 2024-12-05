@@ -38,8 +38,8 @@
 			        $mail->isSMTP();                                     
 			        $mail->Host = 'smtp.gmail.com';                      
 			        $mail->SMTPAuth = true;                               
-			        $mail->Username = 'btissam1234btissam12@gmail.com';     
-			        $mail->Password = 'tldg lalv qaqo elda';                    
+			        $mail->Username = 'hananeassendal.info@gmail.com';     
+			        $mail->Password = 'xrjc lyor exlw ltep';                    
 			        $mail->SMTPOptions = array(
 			            'ssl' => array(
 			            'verify_peer' => false,

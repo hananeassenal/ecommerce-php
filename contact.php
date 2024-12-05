@@ -48,15 +48,15 @@
                     <h3 class="mb-4">Contact Information</h3>
                     <div class="mb-3">
                         <h5><i class="fa fa-map-marker me-2"></i>Address</h5>
-                        <p>123 Tech Lane, Innovation Park, City, Country</p>
+                        <p>ENSEM GLD Casablanca</p>
                     </div>
                     <div class="mb-3">
                         <h5><i class="fa fa-phone me-2"></i>Phone</h5>
-                        <p>+1 (555) 123-4567</p>
+                        <p>+2126458709</p>
                     </div>
                     <div class="mb-3">
                         <h5><i class="fa fa-envelope me-2"></i>Email</h5>
-                        <p>support@sourcecodesters.com</p>
+                        <p>hananeassendal@php.com</p>
                     </div>
                     <div>
                         <h5><i class="fa fa-clock-o me-2"></i>Business Hours</h5>
@@ -93,7 +93,7 @@
         </div>
     </div>
 
-    <?php include 'includes/footer.php'; ?>
+    
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>

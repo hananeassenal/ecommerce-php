@@ -14,8 +14,7 @@
 <?php include 'includes/header.php'; ?>
 <body class="hold-transition skin-blue sidebar-mini">
 <div class="wrapper">
-<!-- 
-  <?php include 'includes/navbar.php'; ?> -->
+
   <?php include 'includes/menubar.php'; ?>
 
   <!-- Content Wrapper. Contains page content -->
@@ -24,6 +23,7 @@
     <section class="content-header">
       <h1>
         Dashboard
+        <small>Control panel</small>
       </h1>
       <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
@@ -33,6 +33,22 @@
 
     <!-- Main content -->
     <section class="content">
+      <!-- Ajout du bouton Tableau de bord complet -->
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="box">
+            <div class="box-header with-border">
+              <h3 class="box-title">Actions rapides</h3>
+            </div>
+            <div class="box-body">
+              <a href="dashboard.php" class="btn btn-lg btn-primary">
+                <i class="fa fa-line-chart"></i> Tableau de bord avancé
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <?php
         if(isset($_SESSION['error'])){
           echo "
@@ -190,7 +206,7 @@
       </section>
       <!-- right col -->
     </div>
-  	<?php include 'includes/footer.php'; ?>
+  
 
 </div>
 <!-- ./wrapper -->
@@ -246,33 +262,19 @@ $(function(){
       }
     ]
   }
-  //barChartData.datasets[1].fillColor   = '#00a65a'
-  //barChartData.datasets[1].strokeColor = '#00a65a'
-  //barChartData.datasets[1].pointColor  = '#00a65a'
-  var barChartOptions                  = {
-    //Boolean - Whether the scale should start at zero, or an order of magnitude down from the lowest value
+
+  var barChartOptions = {
     scaleBeginAtZero        : true,
-    //Boolean - Whether grid lines are shown across the chart
     scaleShowGridLines      : true,
-    //String - Colour of the grid lines
     scaleGridLineColor      : 'rgba(0,0,0,.05)',
-    //Number - Width of the grid lines
     scaleGridLineWidth      : 1,
-    //Boolean - Whether to show horizontal lines (except X axis)
     scaleShowHorizontalLines: true,
-    //Boolean - Whether to show vertical lines (except Y axis)
     scaleShowVerticalLines  : true,
-    //Boolean - If there is a stroke on each bar
     barShowStroke           : true,
-    //Number - Pixel width of the bar stroke
     barStrokeWidth          : 2,
-    //Number - Spacing between each of the X value sets
     barValueSpacing         : 5,
-    //Number - Spacing between data sets within X values
     barDatasetSpacing       : 1,
-    //String - A legend template
     legendTemplate          : '<ul class="<%=name.toLowerCase()%>-legend"><% for (var i=0; i<datasets.length; i++){%><li><span style="background-color:<%=datasets[i].fillColor%>"></span><%if(datasets[i].label){%><%=datasets[i].label%><%}%></li><%}%></ul>',
-    //Boolean - whether to make the chart responsive
     responsive              : true,
     maintainAspectRatio     : true
   }

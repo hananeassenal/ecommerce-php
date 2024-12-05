@@ -89,7 +89,7 @@
 	    </div>
 	  </div>
   
-  	<?php include 'includes/footer.php'; ?>
+  	
 </div>
 
 <?php include 'includes/scripts.php'; ?>

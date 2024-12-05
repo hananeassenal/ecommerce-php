@@ -36,7 +36,7 @@
                             <h5><a href='product.php?product=".$row['slug']."' style='text-decoration: none; color: #333; font-weight: bold;'>".$row['name']."</a></h5>
                           </div>
                           <div class='box-footer' style='text-align: center; background-color: #f9f9f9; border-radius: 0 0 8px 8px;'>
-                            <b style='color: #ff9f00; font-size: 18px;'>$ ".number_format($row['price'], 2)."</b>
+                            <b style='color: #ff9f00; font-size: 18px;'>DH ".number_format($row['price'], 2)."</b>
                           </div>
                         </div>
                       </div>
@@ -54,7 +54,7 @@
     </div>
   </div>
 
-  <?php include 'includes/footer.php'; ?>
+  
 </div>
 
 <?php include 'includes/scripts.php'; ?>
